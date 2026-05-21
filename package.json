@@ -1,0 +1,31 @@
+{
+  "name": "cool-math",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "module": "./dist/cool-math.js",
+  "exports": {
+    ".": {
+      "import": "./dist/cool-math.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "vite": "^8.0.13",
+    "vitest": "^4.1.7"
+  },
+  "dependencies": {
+    "@types/node": "^25.9.1",
+    "uuid": "^14.0.0"
+  }
+}
